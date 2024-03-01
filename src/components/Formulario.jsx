@@ -1,9 +1,9 @@
 const Formulario = () => {
   return (
-    <div className='md:w-1/2 lg:w-2/5'>
-      <h2 className='font-black text-3xl text-center'>Seguimiento Pacientos</h2>
+    <div className='mt-12 md:w-1/2 lg:w-2/5 md:mr-10'>
+      <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes</h2>
       <p className='text-lg mt-3 text-center mb-10'>Añade Pacientes y {''}
-        <span className='text-indigo-600 font-bold text-lg'>Administralos</span>
+        <span className='text-indigo-600 font-bold'>Administralos</span>
       </p>
       <form className="bg-white shadow-md rounded-lg py-8 px-4">
         <div className='mb-5'>
