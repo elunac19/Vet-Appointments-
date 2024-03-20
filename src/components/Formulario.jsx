@@ -1,4 +1,8 @@
+import {useState, useEffect} from 'react';
+
 const Formulario = () => {
+  const [nombre, setnNombre] = useState('')
+
   return (
     <div className='mt-12 md:w-1/2 lg:w-2/5 md:mr-10'>
       <h2 className='font-black text-3xl text-center'>Seguimiento Pacientes</h2>
@@ -31,6 +35,7 @@ const Formulario = () => {
             type="email" 
             placeholder="example@example.com"
             className='border-2 w-full p-2 mt-2 rounded-md'
+            autoComplete='email'
           />
         </div>
         <div className='mb-5'>
@@ -43,7 +48,7 @@ const Formulario = () => {
           />
         </div>
         <div className='mb-5'>
-          <label htmlFor="sintomas " className="block text-gray-700 uppercase font-bold pl-2">Sintomas</label>
+          <label htmlFor="sintomas" className="block text-gray-700 uppercase font-bold pl-2">Sintomas</label>
           <textarea
             id='sintomas'
             className='border-2 w-full p-2 mt-2 rounded-md'
